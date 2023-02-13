@@ -1,9 +1,12 @@
 import { UilCardAtm, UilEstate } from "@iconscout/react-unicons";
-const Sidebar = ({ showSidebar }) => {
+import { useContext } from "react";
+import { ToggleContext } from "../../context/ToggleContext";
+const Sidebar = () => {
+  const { isToggled } = useContext(ToggleContext);
   return (
     <div
       className={
-        showSidebar
+        isToggled
           ? "fixed top-0 bottom-0 p-2 w-[300px] overflow-y-auto z-50 text-center bg-[#1A1C1E]"
           : "sm:left-[-100%] left-[100%] fixed top-0 bottom-0 p-2 w-[300px] overflow-y-auto z-50 text-center bg-[#1A1C1E]"
       }

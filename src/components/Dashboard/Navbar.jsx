@@ -1,14 +1,21 @@
-import { UilBell, UilAngleDown } from "@iconscout/react-unicons";
+import { UilBars, UilAngleDown } from "@iconscout/react-unicons";
+import { useContext } from "react";
 import avatar from "../../assets/avatars/gMyfIhZY_400x400.jpg";
+import { ToggleContext } from "../../context/ToggleContext";
 const Navbar = () => {
+  const { isToggled, setIsToggled } = useContext(ToggleContext);
+
   return (
     <nav className="w-full bg-[#111315] flex justify-between items-center p-4">
       {/* Navbar items */}
       <ul className="text-white flex list-none flex-row items-center mr-auto">
-        <li className="font-bold text-xl">My Wallet</li>
-        {/* <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
-          Login
-        </li> */}
+        {/* <li className="font-bold text-xl">My Wallet</li> */}
+        <li
+          className="font-bold text-xl cursor-pointer"
+          onClick={() => setIsToggled(!isToggled)}
+        >
+          <UilBars />
+        </li>
       </ul>
       {/* Navbar items */}
       <ul className="text-white flex list-none flex-row items-center ml-auto">

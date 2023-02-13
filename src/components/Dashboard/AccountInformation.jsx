@@ -8,16 +8,14 @@ export const AccountInformation = () => {
         <WalletDetails />
       </div>
 
-      <div className="lg:col-span-6 col-span-12 lg:border-l-[1px] xl:border-t-[1px] border-white/10">
+      <div className="lg:col-span-6 col-span-12 lg:border-l-[1px] border-t-[1px] xl:border-t-[0px] border-white/10">
         <div className="p-5">
-          <div className="ml-auto">
-            <h4 className="mr-auto text-white font-bold text-md">
-              Virtual Cards
-            </h4>
-            <div className="flex justify-center items-center">
-              <div className="mt-5 ml-3 lg:w-96 lg:h-56 w-80">
-                <VirtualCards />
-              </div>
+          <h4 className="mr-auto text-white font-bold text-md">
+            Virtual Cards
+          </h4>
+          <div className="flex justify-center items-center">
+            <div className="mt-5 ml-3 w-[100%]">
+              <VirtualCards />
             </div>
           </div>
         </div>

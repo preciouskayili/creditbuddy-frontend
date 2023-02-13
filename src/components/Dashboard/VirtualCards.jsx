@@ -1,20 +1,47 @@
 import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { UilAngleLeft, UilAngleRight } from "@iconscout/react-unicons";
+import { useState } from "react";
 
 const VirtualCards = () => {
-  const [sliderRef] = useKeenSlider({
-    loop: true,
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+  const [sliderRef, instanceRef] = useKeenSlider({
+    initial: 0,
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+    created() {
+      setLoaded(true);
+    },
+    loop: false,
     mode: "snap",
     slides: {
       perView: 1,
-      spacing: 10
+      spacing: 10,
+    },
+    breakpoints: {
+      "(max-width: 480px)": {
+        slides: { perView: 1, spacing: 10 },
+      },
+      "(min-width: 651)": {
+        slides: { perView: 1, spacing: 10 },
+      },
+      "(min-width: 1024px)": {
+        slides: { perView: 1, spacing: 10 },
+      },
+      "(min-width: 1200px)": {
+        slides: { perView: 1, spacing: 10 },
+      },
+      "(min-width: 1400px)": {
+        slides: { perView: 2, spacing: 10 },
+      },
     },
   });
+
   return (
     <>
-      <div className="keen-slider" ref={sliderRef}>
+      <div className="keen-slider p-1" ref={sliderRef}>
         {[1, 2, 3, 4, 5].map((index) => (
           <div className="keen-slider__slide" key={index}>
             <div className="w-[95%] cursor-pointer bg-gradient-to-bl from-[#0A82FC] to-[#2d55dc] rounded-xl text-white shadow-2xl">
@@ -51,6 +78,30 @@ const VirtualCards = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="flex items-center justify-center">
+        {loaded && instanceRef.current && (
+          <div className="dots">
+            {[
+              ...Array(instanceRef.current.track.details.slides.length).keys(),
+            ].map((idx) => {
+              return (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    instanceRef.current?.moveToIdx(idx);
+                  }}
+                  className={
+                    "bg-white/80 h-2 w-2 ml-2 rounded-full" +
+                    (currentSlide === idx
+                      ? " bg-blue-500 h-2 w-4 ml-2 rounded-full transition-all"
+                      : "")
+                  }
+                ></button>
+              );
+            })}
+          </div>
+        )}
       </div>
     </>
   );
