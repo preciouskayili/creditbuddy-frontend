@@ -16,12 +16,12 @@ export const AccountInformation = () => {
               Virtual Cards
             </h4>
             <div className="ml-auto text-white/80 flex">
-              <div className="bg-white/20 rounded-[0.25rem] p-1 mr-2">
+              <button className="bg-white/20 rounded-[0.25rem] p-1 mr-2">
                 <UilEye />
-              </div>
-              <div className="bg-white/20 rounded-[0.25rem] p-1">
+              </button>
+              <button className="bg-white/20 rounded-[0.25rem] p-1">
                 <UilPlus />
-              </div>
+              </button>
             </div>
           </div>
           <div className="flex justify-center items-center">
