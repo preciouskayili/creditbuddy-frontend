@@ -7,8 +7,8 @@ const Sidebar = () => {
     <div
       className={
         isToggled
-          ? "fixed top-0 bottom-0 p-2 w-[300px] overflow-y-auto z-50 text-center bg-[#1A1C1E]"
-          : "sm:left-[-100%] left-[100%] fixed top-0 bottom-0 p-2 w-[300px] overflow-y-auto z-50 text-center bg-[#1A1C1E]"
+          ? "fixed top-0 bottom-0 p-2 w-[300px] overflow-y-auto z-50 text-center bg-[#1A1C1E] transition-all left-0"
+          : "sm:-left-[100%] -left-[100%] lg:left-0 fixed top-0 bottom-0 p-2 w-[300px] overflow-y-auto z-50 text-center bg-[#1A1C1E]"
       }
     >
       <div className="text-gray-100 text-xl">

@@ -9,9 +9,9 @@ const Navbar = () => {
     <nav className="w-full bg-[#111315] flex justify-between items-center p-4">
       {/* Navbar items */}
       <ul className="text-white flex list-none flex-row items-center mr-auto">
-        {/* <li className="font-bold text-xl">My Wallet</li> */}
+        <li className="font-bold text-xl hidden lg:inline-flex">My Wallet</li>
         <li
-          className="font-bold text-xl cursor-pointer"
+          className="font-bold text-xl cursor-pointer lg:hidden inline-flex"
           onClick={() => setIsToggled(!isToggled)}
         >
           <UilBars />
