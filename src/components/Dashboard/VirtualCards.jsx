@@ -1,4 +1,3 @@
-import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { useState } from "react";
@@ -56,7 +55,9 @@ const VirtualCards = () => {
           <div className="flex justify-between pt-20 pb-7">
             <div>
               <p className="text-white/70 font-bold text-xs">Card number</p>
-              <p className="font-bold uppercase text-sm">**** **** **** 3225</p>
+              <p className="font-bold uppercase text-sm tracking-wider">
+                **** **** **** 3225
+              </p>
             </div>
             <p>
               <small className="text-[10px] block">VALID THRU</small>
