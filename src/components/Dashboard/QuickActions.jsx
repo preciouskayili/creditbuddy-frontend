@@ -7,29 +7,29 @@ import {
 const QuickActions = () => {
   return (
     <div className="grid grid-cols-12 gap-4 mt-3">
-      <button className="bg-[#0A82FC]/40 hover:bg-[#0A82FC]/90 focus:ring-4 ring-[hover:bg-[#0A82FC]/90 transition-all rounded-lg px-4 py-3 col-span-6 text-xs text-white/80 text-center flex items-center">
+      <button className="bg-[#0A82FC]/40 hover:bg-[#0A82FC]/90 focus:ring-4 ring-[hover:bg-[#0A82FC]/90 border border-white/10 transition-all rounded-lg px-4 py-3 col-span-6 text-xs text-white/80 text-center flex items-center">
         <div className="text-sm h-[40px] w-[40px] p-3 flex items-center justify-center bg-black/50 rounded-full mr-2">
           <UilArrowFromTop />
         </div>
         <h3 className="font-bold text-white">Airtime</h3>
       </button>
 
-      <button className="bg-[#0A82FC]/40 hover:bg-[#0A82FC]/90 focus:ring-4 ring-[hover:bg-[#0A82FC]/90 transition-all rounded-lg px-4 py-3 col-span-6 text-xs text-white/80 text-center flex items-center">
+      <button className="bg-[#0A82FC]/40 hover:bg-[#0A82FC]/90 focus:ring-4 ring-[hover:bg-[#0A82FC]/90 border border-white/10 transition-all rounded-lg px-4 py-3 col-span-6 text-xs text-white/80 text-center flex items-center">
         <div className="text-sm h-[40px] w-[40px] p-3 flex items-center justify-center bg-black/50 rounded-full mr-2">
           <UilArrowFromTop />
         </div>
         <h3 className="font-bold text-white">Data</h3>
       </button>
 
-      <button className="bg-[#0A82FC]/40 hover:bg-[#0A82FC]/90 focus:ring-4 ring-[hover:bg-[#0A82FC]/90 transition-all rounded-lg px-4 py-3 col-span-6 text-xs text-white/80 text-center flex items-center">
+      <button className="bg-[#0A82FC]/40 hover:bg-[#0A82FC]/90 focus:ring-4 ring-[hover:bg-[#0A82FC]/90 border border-white/10 transition-all rounded-lg px-4 py-3 col-span-6 text-xs text-white/80 text-center flex items-center">
         <div className="text-sm h-[40px] w-[40px] p-3 flex items-center justify-center bg-black/50 rounded-full mr-2">
           <UilArrowFromTop />
         </div>
         <h3 className="font-bold text-white">Electricity</h3>
       </button>
 
-      <button className="bg-[#0A82FC]/40 hover:bg-[#0A82FC]/90 focus:ring-4 ring-[hover:bg-[#0A82FC]/90 transition-all rounded-lg px-4 py-3 col-span-6 text-xs text-white/80 text-center flex items-center">
-        <div className="text-sm h-[40px] w-[40px] p-3 flex items-center justify-center bg-black/50 rounded-full mr-2">
+      <button className="bg-[#0A82FC]/40 hover:bg-[#0A82FC]/90 focus:ring-4 ring-[hover:bg-[#0A82FC]/90 border border-white/10 transition-all rounded-lg px-4 py-3 col-span-6 text-xs text-white/80 text-center flex items-center">
+        <div className="text-sm h-10 w-10 p-3 flex items-center justify-center bg-black/50 rounded-full mr-2 w-full">
           <UilArrowFromTop />
         </div>
         <h3 className="font-bold text-white">Cable TV</h3>

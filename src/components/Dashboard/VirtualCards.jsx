@@ -46,7 +46,7 @@ const VirtualCards = () => {
           <div className="flex justify-between pt-8">
             <div>
               <h5 className="text-white/70 font-bold text-xs">Card balance</h5>
-              <h3 className="font-bold text-xl">$32,819.00</h3>
+              <p className="font-medium uppercase text-sm">Precious Kayili</p>
             </div>
             <img
               className="h-4"
@@ -55,8 +55,8 @@ const VirtualCards = () => {
           </div>
           <div className="flex justify-between pt-20 pb-7">
             <div>
-              <p className="font-medium uppercase text-sm">Precious Kayili</p>
-              <p className="font-bold text-white/70">**** **** **** 3225</p>
+              <p className="text-white/70 font-bold text-xs">Card number</p>
+              <p className="font-bold uppercase text-sm">**** **** **** 3225</p>
             </div>
             <p>
               <small className="text-[10px] block">VALID THRU</small>
