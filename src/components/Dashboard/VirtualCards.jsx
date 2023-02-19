@@ -40,7 +40,7 @@ const VirtualCards = () => {
 
   return (
     <>
-      <div className="card w-96 h-56 mx-auto cursor-pointer bg-gradient-to-bl from-[#0A82FC] to-[#2d55dc] rounded-xl text-white shadow-2xl">
+      <div className="card w-auto sm:w-96 sm:h-56 mx-auto cursor-pointer bg-gradient-to-bl from-[#0A82FC] to-[#2d55dc] rounded-xl text-white shadow-2xl">
         <div className="w-full px-8 flex flex-col justify-center">
           <div className="flex justify-between pt-8">
             <div>
