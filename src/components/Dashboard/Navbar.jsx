@@ -12,23 +12,35 @@ const Navbar = () => {
       </ul>
       {/* Navbar items */}
       <ul className="text-white flex list-none flex-row items-center ml-auto">
-        <li className="mx-4 cursor-pointer p-2 rounded-full flex">
-          <img
-            src={avatar}
-            className="rounded-full w-[60px] h-[60px] object-cover"
-            alt="Profile"
-          />
-          <div className="px-3 my-auto">
-            <small className="text-xs text-white/70">Hello,</small>
-            <h5 className="text-sm font-bold">Precious K.</h5>
+        <li className="mx-4 cursor-pointer">
+          <div className="dropdown">
+            <label tabindex="0" className="flex p-2 btn-ghost rounded-full">
+              <img
+                src={avatar}
+                className="rounded-full w-[60px] h-[60px] object-cover"
+                alt="Profile"
+              />
+              <div className="px-3 my-auto">
+                <small className="text-xs text-white/70">Hello,</small>
+                <h5 className="text-sm font-bold">Precious K.</h5>
+              </div>
+              <span className="my-auto">
+                <UilAngleDown />
+              </span>
+            </label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a>Item 1</a>
+              </li>
+              <li>
+                <a>Item 2</a>
+              </li>
+            </ul>
           </div>
-          <span className="my-auto">
-            <UilAngleDown />
-          </span>
         </li>
-        {/* <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
-          Login
-        </li> */}
       </ul>
     </nav>
   );
