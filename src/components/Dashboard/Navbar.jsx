@@ -10,12 +10,9 @@ const Navbar = () => {
       {/* Navbar items */}
       <ul className="text-white flex list-none flex-row items-center mr-auto">
         <li className="font-bold text-xl hidden lg:inline-flex">My Wallet</li>
-        <li
-          className="font-bold text-xl cursor-pointer lg:hidden inline-flex"
-          onClick={() => setIsToggled(!isToggled)}
-        >
+        <label htmlFor="my-drawer-2" className="drawer-button lg:hidden">
           <UilBars />
-        </li>
+        </label>
       </ul>
       {/* Navbar items */}
       <ul className="text-white flex list-none flex-row items-center ml-auto">
