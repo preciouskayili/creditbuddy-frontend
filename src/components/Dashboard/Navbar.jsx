@@ -1,10 +1,6 @@
 import { UilBars, UilAngleDown } from "@iconscout/react-unicons";
-import { useContext } from "react";
 import avatar from "../../assets/avatars/gMyfIhZY_400x400.jpg";
-import { ToggleContext } from "../../context/ToggleContext";
 const Navbar = () => {
-  const { isToggled, setIsToggled } = useContext(ToggleContext);
-
   return (
     <nav className="w-full bg-[#111315] flex justify-between items-center p-4">
       {/* Navbar items */}

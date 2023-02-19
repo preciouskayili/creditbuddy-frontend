@@ -19,9 +19,6 @@ export const AccountInformation = () => {
               <button className="bg-white/20 rounded-[0.25rem] p-1 mr-2">
                 <UilEye />
               </button>
-              <button className="bg-white/20 rounded-[0.25rem] p-1">
-                <UilPlus />
-              </button>
             </div>
           </div>
           <div className="flex justify-center items-center">

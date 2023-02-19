@@ -1,9 +1,6 @@
 import { UilCardAtm, UilEstate } from "@iconscout/react-unicons";
-import { useContext } from "react";
-import { ToggleContext } from "../../context/ToggleContext";
 import Navbar from "./Navbar";
 const Sidebar = ({ children }) => {
-  const { isToggled } = useContext(ToggleContext);
   return (
     <div className="drawer drawer-mobile">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />

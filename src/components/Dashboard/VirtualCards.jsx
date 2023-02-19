@@ -40,11 +40,11 @@ const VirtualCards = () => {
 
   return (
     <>
-      <div className="w-96 h-56 mx-auto cursor-pointer bg-gradient-to-bl from-[#0A82FC] to-[#2d55dc] rounded-xl text-white shadow-2xl">
+      <div className="card w-96 h-56 mx-auto cursor-pointer bg-gradient-to-bl from-[#0A82FC] to-[#2d55dc] rounded-xl text-white shadow-2xl">
         <div className="w-full px-8 flex flex-col justify-center">
           <div className="flex justify-between pt-8">
             <div>
-              <h5 className="text-white/70 font-bold text-xs">Card balance</h5>
+              <h5 className="text-white/70 font-bold text-xs">Card Holder</h5>
               <p className="font-medium uppercase text-sm">Precious Kayili</p>
             </div>
             <img
