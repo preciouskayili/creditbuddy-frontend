@@ -10,7 +10,7 @@ const RecentTransactions = () => {
     <>
       {[1, 2].map((items) => (
         <>
-          <div key={items} className="flex mb-4 bg-green-500/10 p-5 rounded-md">
+          <div key={items} className="flex mb-4 bg-white/10 p-5 rounded-md">
             <div className="flex">
               <UilArrowUpRight className="text-green-500 text-lg mr-3 p-2 h-10 w-10 rounded-sm" />
               <div className="flex-col mr-auto">
@@ -32,7 +32,7 @@ const RecentTransactions = () => {
             </div>
           </div>
 
-          <div key={items} className="flex mb-4 bg-red-500/10 p-5 rounded-md">
+          <div key={items} className="flex mb-4 bg-white/10 p-5 rounded-md">
             <div className="flex">
               <UilArrowDownLeft className="text-red-500 text-lg mr-3 p-2 h-10 w-10 rounded-sm" />
               <div className="flex-col mr-auto">
