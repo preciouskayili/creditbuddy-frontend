@@ -1,43 +1,4 @@
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
-import { useState } from "react";
-
 const VirtualCards = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [loaded, setLoaded] = useState(false);
-  const [sliderRef, instanceRef] = useKeenSlider({
-    initial: 0,
-    slideChanged(slider) {
-      setCurrentSlide(slider.track.details.rel);
-    },
-    created() {
-      setLoaded(true);
-    },
-    loop: false,
-    mode: "snap",
-    slides: {
-      perView: 1,
-      spacing: 10,
-    },
-    breakpoints: {
-      "(max-width: 480px)": {
-        slides: { perView: 1, spacing: 10 },
-      },
-      "(min-width: 651)": {
-        slides: { perView: 1, spacing: 10 },
-      },
-      "(min-width: 1024px)": {
-        slides: { perView: 1, spacing: 10 },
-      },
-      "(min-width: 1200px)": {
-        slides: { perView: 1, spacing: 10 },
-      },
-      "(min-width: 1400px)": {
-        slides: { perView: 2, spacing: 10 },
-      },
-    },
-  });
-
   return (
     <>
       <div className="card w-auto sm:w-96 sm:h-56 mx-auto cursor-pointer bg-gradient-to-bl from-[#0A82FC] to-[#2d55dc] rounded-xl text-white shadow-2xl">

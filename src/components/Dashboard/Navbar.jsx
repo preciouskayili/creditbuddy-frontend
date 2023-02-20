@@ -12,9 +12,12 @@ const Navbar = () => {
       </ul>
       {/* Navbar items */}
       <ul className="text-white flex list-none flex-row items-center ml-auto">
-        <li className="mx-4 cursor-pointer">
+        <li className="mx-4">
           <div className="dropdown">
-            <label tabindex="0" className="flex p-2 btn-ghost rounded-full">
+            <label
+              tabindex="0"
+              className="flex p-2 btn-ghost rounded-full cursor-pointer"
+            >
               <img
                 src={avatar}
                 className="rounded-full w-[60px] h-[60px] object-cover"
@@ -30,13 +33,13 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+              class="dropdown-content menu p-2 shadow bg-[#1A1C1E] rounded-lg w-52"
             >
               <li>
-                <a>Item 1</a>
+                <a className="font-bold mb-2">Profile</a>
               </li>
               <li>
-                <a>Item 2</a>
+                <a className="btn btn-error">Logout</a>
               </li>
             </ul>
           </div>
