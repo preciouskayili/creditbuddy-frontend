@@ -3,7 +3,7 @@ import DashboardLayout from "../layouts/DashboardLayout";
 
 const Settings = () => {
   return (
-    <DashboardLayout>
+    <DashboardLayout pageTitle="Settings">
       <div>Settings</div>
     </DashboardLayout>
   );

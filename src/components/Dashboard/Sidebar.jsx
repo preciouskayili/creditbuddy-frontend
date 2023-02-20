@@ -1,12 +1,12 @@
 import { UilCardAtm, UilEstate } from "@iconscout/react-unicons";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
-const Sidebar = ({ children }) => {
+const Sidebar = ({ children, pageTitle }) => {
   return (
     <div className="drawer drawer-mobile">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
-        <Navbar />
+        <Navbar pageTitle={pageTitle} />
         {children}
       </div>
       <div className="drawer-side">

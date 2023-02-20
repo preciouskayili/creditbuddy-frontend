@@ -6,7 +6,7 @@ import RecentTransactions from "../components/Dashboard/RecentTransactions";
 const Dashboard = () => {
   return (
     <div className="bg-[#111315] min-h-[100vh]">
-      <DashboardLayout>
+      <DashboardLayout pageTitle="My Wallet">
         <AccountInformation />
 
         <div className="grid grid-cols-12 mt-12 gap-8 items-start container">

@@ -1,11 +1,11 @@
 import { UilBars, UilAngleDown } from "@iconscout/react-unicons";
 import avatar from "../../assets/avatars/gMyfIhZY_400x400.jpg";
-const Navbar = () => {
+const Navbar = ({ pageTitle }) => {
   return (
     <nav className="w-full bg-[#111315] flex justify-between items-center p-4">
       {/* Navbar items */}
       <ul className="text-white flex list-none flex-row items-center mr-auto">
-        <li className="font-bold text-xl hidden lg:inline-flex">My Wallet</li>
+        <li className="font-bold text-xl hidden lg:inline-flex">{pageTitle}</li>
         <label htmlFor="my-drawer-2" className="drawer-button lg:hidden">
           <UilBars />
         </label>

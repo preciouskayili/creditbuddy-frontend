@@ -3,7 +3,7 @@ import DashboardLayout from "../layouts/DashboardLayout";
 
 const Expenses = () => {
   return (
-    <DashboardLayout>
+    <DashboardLayout pageTitle="Expenses">
       <div>Expenses</div>
     </DashboardLayout>
   );
