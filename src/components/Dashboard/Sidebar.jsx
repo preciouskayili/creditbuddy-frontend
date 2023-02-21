@@ -12,8 +12,11 @@ const Sidebar = ({ children, pageTitle }) => {
       <div className="drawer-side">
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
         <ul className="menu p-4 w-80 bg-[#1A1C1E] text-neutral-content">
-          <li className="glass text-white font-bold text-center rounded-full mb-5 p-4">
-            Creditpadi
+          <li className="mr-auto mt-4 mb-5">
+            <img
+              src="https://uploads-ssl.webflow.com/6194b7fcf08b5fb4a89cf648/6194b7fcf08b5f1ea19cf671_Logo.svg"
+              alt="Creditbuddy"
+            />
           </li>
           <li>
             <Link to="/dashboard">Dashboard</Link>
