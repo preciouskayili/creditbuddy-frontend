@@ -6,6 +6,8 @@ import Dashboard from "./pages/Dashboard";
 import Transactions from "./pages/Transactions";
 import Expenses from "./pages/Expenses";
 import Settings from "./pages/Settings";
+import Login from "./components/Auth/Login";
+import Register from "./components/Auth/Register";
 
 const router = createBrowserRouter([
   {
@@ -22,7 +24,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/settings",
-    element: <Settings />
+    element: <Settings />,
+  },
+  {
+    path: "/auth/login",
+    element: <Login />,
+  },
+  {
+    path: "/auth/register",
+    element: <Register />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

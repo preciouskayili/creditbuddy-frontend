@@ -1,5 +1,6 @@
 import { UilBars, UilAngleDown } from "@iconscout/react-unicons";
 import avatar from "../../assets/avatars/gMyfIhZY_400x400.jpg";
+import { Link } from "react-router-dom";
 const Navbar = ({ pageTitle }) => {
   return (
     <nav className="w-full bg-[#111315] flex justify-between items-center p-4">
@@ -15,7 +16,7 @@ const Navbar = ({ pageTitle }) => {
         <li className="mx-4">
           <div className="dropdown">
             <label
-              tabindex="0"
+              tabIndex="0"
               className="flex p-2 btn-ghost rounded-full cursor-pointer"
             >
               <img
@@ -32,14 +33,16 @@ const Navbar = ({ pageTitle }) => {
               </span>
             </label>
             <ul
-              tabindex="0"
-              class="dropdown-content menu p-2 shadow bg-[#1A1C1E] rounded-lg w-52"
+              tabIndex="0"
+              className="dropdown-content menu p-2 shadow bg-[#1A1C1E] rounded-lg w-52"
             >
               <li>
                 <a className="font-bold mb-2">Profile</a>
               </li>
               <li>
-                <a className="btn btn-error">Logout</a>
+                <Link to="/auth/login" className="btn btn-error">
+                  Logout
+                </Link>
               </li>
             </ul>
           </div>

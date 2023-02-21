@@ -5,12 +5,12 @@ import CardDetails from "./CardDetails";
 const AccountInformation = () => {
   return (
     <div className="grid grid-cols-12 bg-white/5 rounded-lg">
-      <div className="lg:col-span-6 col-span-12 p-5">
+      <div className="xl:col-span-6 col-span-12 p-5">
         <h4 className="mr-auto text-white font-bold text-md">Information</h4>
         <WalletDetails />
       </div>
 
-      <div className="lg:col-span-6 col-span-12 lg:border-l-[1px] border-t-[1px] xl:border-t-[0px] border-white/10">
+      <div className="xl:col-span-6 col-span-12 lg:border-l-[1px] border-t-[1px] xl:border-t-[0px] border-white/10">
         <div className="p-5">
           <div className="flex">
             <h4 className="mr-auto text-white font-bold text-md">

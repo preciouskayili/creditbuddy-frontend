@@ -1,9 +1,10 @@
 import { useState } from "react";
 import {
-  UilArrowFromTop,
+  UilMinus,
+  UilPlus,
   UilEyeSlash,
   UilEye,
-  UilMoneyWithdraw,
+  UilLock,
 } from "@iconscout/react-unicons";
 
 const WalletDetails = () => {
@@ -38,23 +39,23 @@ const WalletDetails = () => {
       <div className="flex justify-around">
         <button className="text-xs text-white/80 text-center flex flex-col items-center justify-center">
           <div className="text-sm h-[50px] w-[50px] flex items-center justify-center rotate-180 bg-black/50 rounded-full mb-1">
-            <UilArrowFromTop />
+            <UilPlus />
           </div>
           Send
         </button>
 
         <button className="text-xs text-white/80 text-center flex flex-col items-center justify-center">
           <div className="text-sm h-[50px] w-[50px] p-3 flex items-center justify-center bg-black/50 rounded-full mb-1">
-            <UilArrowFromTop />
+            <UilMinus />
           </div>
           Receive
         </button>
 
         <button className="text-xs text-white/80 text-center flex flex-col items-center justify-center">
           <div className="text-sm h-[50px] w-[50px] p-3 flex items-center justify-center bg-black/50 rounded-full mb-1">
-            <UilMoneyWithdraw />
+            <UilLock />
           </div>
-          Withdraw
+          Lock
         </button>
       </div>
     </div>
