@@ -5,11 +5,15 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      sans: ['Ubuntu', 'sans-serif']
+
+    }
   },
   daisyui: {
     themes: [
       {
-        smartklasTheme: {
+        creditBuddyTheme: {
           primary: "#0033E8",
           secondary: "#F000B8",
           accent: "#37CDBE",

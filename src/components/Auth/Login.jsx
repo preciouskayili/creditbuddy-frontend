@@ -3,15 +3,14 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="bg-[#111315] min-h-[100vh] flex flex-col items-center justify-center">
-      <h3 className="text-white font-bold text-xl uppercase mb-6">
-        <img
-          className="h-8 mb-5"
-          src="https://www.seekpng.com/png/full/212-2128294_visa-png.png"
-        />
-      </h3>
-      <div className="bg-white/5 w-96 card rounded-lg">
+    <div className="bg-[#111315] min-h-[100vh] grid grid-cols-12">
+      <div className="hidden lg:flex lg:col-span-7 bg-primary p-10"></div>
+      <div className="col-span-12 lg:col-span-5 p-5 flex w-full items-center">
         <div className="card-body">
+          <h3 className="text-white font-bold text-xl mb-2">Sign In</h3>
+          <p className="text-gray-50 text-sm mb-5">
+            Sign in to access your dashboard
+          </p>
           <form className="form-control">
             <label htmlFor="email" className="label-text mb-3 text-white">
               Email Address
@@ -19,7 +18,7 @@ const Login = () => {
             <input
               type="email"
               id="email"
-              className="input bg-gray-700 placeholder:text-xs input-bordered w-full"
+              className="input bg-gray-700 w-full"
               placeholder="name@domain.com"
             />
 
@@ -32,25 +31,27 @@ const Login = () => {
             <div className="input-group">
               <input
                 type="password"
-                placeholder="Password"
-                className="input bg-gray-700 placeholder:text-xs input-bordered w-full"
+                placeholder="**********"
+                className="input bg-gray-700 w-full"
               />
-              <button className="btn btn-square btn-primary">
+              <button className="btn btn-square border-0 bg-gray-700">
                 <UilEye />
               </button>
             </div>
-            <small className="text-gray-200 text-right mt-4">
-              <a href="#">Forgot password?</a>
-            </small>
-            <button className="btn btn-primary mt-3">Login</button>
+            <span className="text-white mt-4 text-right">
+              Forgot your password?{" "}
+              <a href="#" className="text-blue-500">
+                Reset password
+              </a>
+            </span>
+            <button className="btn btn-primary mt-8 text-white normal-case">
+              Sign In
+            </button>
 
-            <span className="text-sm text-center mt-4 text-white">
-              Not a member?{" "}
-              <Link
-                to="/auth/register"
-                className="text-primary underline underline-offset-2"
-              >
-                Sign Up
+            <span className=" mt-4 text-white">
+              Don't have an account?{" "}
+              <Link to="/auth/register" className="text-blue-500">
+                Create account →
               </Link>
             </span>
           </form>

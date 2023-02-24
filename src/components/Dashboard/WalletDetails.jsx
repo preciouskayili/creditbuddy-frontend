@@ -1,10 +1,10 @@
 import { useState } from "react";
 import {
-  UilMinus,
-  UilPlus,
+  UilMoneyInsert,
+  UilMoneyWithdraw,
   UilEyeSlash,
   UilEye,
-  UilLock,
+  UilLockAlt,
 } from "@iconscout/react-unicons";
 
 const WalletDetails = () => {
@@ -39,23 +39,23 @@ const WalletDetails = () => {
       <div className="flex justify-around">
         <button className="text-xs text-white/80 text-center flex flex-col items-center justify-center">
           <div className="text-sm h-[50px] w-[50px] flex items-center justify-center rotate-180 bg-black/50 rounded-full mb-1">
-            <UilPlus />
-          </div>
-          Fund
-        </button>
-
-        <button className="text-xs text-white/80 text-center flex flex-col items-center justify-center">
-          <div className="text-sm h-[50px] w-[50px] p-3 flex items-center justify-center bg-black/50 rounded-full mb-1">
-            <UilMinus />
+            <UilMoneyWithdraw />
           </div>
           Withdraw
         </button>
 
         <button className="text-xs text-white/80 text-center flex flex-col items-center justify-center">
           <div className="text-sm h-[50px] w-[50px] p-3 flex items-center justify-center bg-black/50 rounded-full mb-1">
-            <UilLock />
+            <UilMoneyInsert />
           </div>
-          Lock
+          Fund Card
+        </button>
+
+        <button className="text-xs text-white/80 text-center flex flex-col items-center justify-center">
+          <div className="text-sm h-[50px] w-[50px] p-3 flex items-center justify-center bg-black/50 rounded-full mb-1">
+            <UilLockAlt />
+          </div>
+          Freeze Card
         </button>
       </div>
     </div>

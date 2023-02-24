@@ -1,6 +1,11 @@
-import { UilCardAtm, UilEstate } from "@iconscout/react-unicons";
+import {
+  UilDashboard,
+  UilTransaction,
+  UilAnalytics,
+  UilSetting,
+} from "@iconscout/react-unicons";
 import Navbar from "./Navbar";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Sidebar = ({ children, pageTitle }) => {
   return (
     <div className="drawer drawer-mobile">
@@ -11,7 +16,7 @@ const Sidebar = ({ children, pageTitle }) => {
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-80 bg-[#1A1C1E] text-neutral-content">
+        <ul className="menu p-4 w-80 bg-[#1A1C1E] text-neutral-content space-y-3">
           <li className="mr-auto mt-4 mb-5">
             <img
               src="https://uploads-ssl.webflow.com/6194b7fcf08b5fb4a89cf648/6194b7fcf08b5f1ea19cf671_Logo.svg"
@@ -19,16 +24,48 @@ const Sidebar = ({ children, pageTitle }) => {
             />
           </li>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <NavLink
+              className={({ isActive }) =>
+                isActive && "text-primary bg-blue-500/[0.05]"
+              }
+              to="/dashboard"
+            >
+              <UilDashboard />
+              Dashboard
+            </NavLink>
           </li>
           <li>
-            <Link to="/transactions">Transactions</Link>
+            <NavLink
+              to="/transactions"
+              className={({ isActive }) =>
+                isActive && "text-primary bg-blue-500/[0.05]"
+              }
+            >
+              <UilTransaction />
+              Transactions
+            </NavLink>
           </li>
           <li>
-            <Link to="/expenses">Expenses</Link>
+            <NavLink
+              to="/expenses"
+              className={({ isActive }) =>
+                isActive && "text-primary bg-blue-500/[0.05]"
+              }
+            >
+              <UilAnalytics />
+              Expenses
+            </NavLink>
           </li>
           <li>
-            <Link to="/settings">Settings</Link>
+            <NavLink
+              to="/settings"
+              className={({ isActive }) =>
+                isActive && "text-primary bg-blue-500/[0.05]"
+              }
+            >
+              <UilSetting />
+              Settings
+            </NavLink>
           </li>
         </ul>
       </div>
