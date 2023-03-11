@@ -8,6 +8,7 @@ import Expenses from "./pages/Expenses";
 import Settings from "./pages/Settings";
 import Login from "./components/Auth/Login";
 import Register from "./components/Auth/Register";
+import Auth0ProviderWithHistory from "./components/Auth/Auth0Provider";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,8 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Auth0ProviderWithHistory>
+      <RouterProvider router={router}></RouterProvider>
+    </Auth0ProviderWithHistory>
   </React.StrictMode>
 );

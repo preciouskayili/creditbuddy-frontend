@@ -1,14 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
     fontFamily: {
-      sans: ['Ubuntu', 'sans-serif']
-
-    }
+      sans: ["Satoshi", "sans-serif"],
+    },
   },
   daisyui: {
     themes: [
@@ -29,4 +26,4 @@ module.exports = {
     ],
   },
   plugins: [require("daisyui")],
-}
+};

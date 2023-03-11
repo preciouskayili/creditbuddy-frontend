@@ -25,13 +25,13 @@ const WalletDetails = () => {
           </button>
         </div>
 
-        <h3 className="mt-2 flex items-center overflow-x-auto">
+        <h3 className="mt-2 flex items-center overflow-x-auto overflow-y-hidden">
           <span className="font-bold text-white text-3xl">
             ${showBalance ? "86,688.00" : "*** **"}
           </span>
           <span className="ml-3 font-light text-white/70 text-xl">USD</span>
         </h3>
-        <p className="mt-3 text-white/80 text-sm">February 09, 2022</p>
+        <p className="mt-3 text-white/80 text-sm">Precious Kayili</p>
       </div>
 
       <div className="border-t-[2px] border-white/30 my-5 flex" />

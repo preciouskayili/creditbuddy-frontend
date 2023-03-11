@@ -6,7 +6,11 @@ import {
 } from "@iconscout/react-unicons";
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
+import logo from "../../assets/icons/logo.svg";
+
 const Sidebar = ({ children, pageTitle }) => {
+  const { loginWithRedirect, logout, user, isLoading } = useAuth0();
   return (
     <div className="drawer drawer-mobile">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -18,10 +22,7 @@ const Sidebar = ({ children, pageTitle }) => {
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
         <ul className="menu p-4 w-80 bg-[#1A1C1E] text-neutral-content space-y-3">
           <li className="mr-auto mt-4 mb-5">
-            <img
-              src="https://uploads-ssl.webflow.com/6194b7fcf08b5fb4a89cf648/6194b7fcf08b5f1ea19cf671_Logo.svg"
-              alt="Creditbuddy"
-            />
+            <img className="h-20" src={logo} alt="Creditbuddy" />
           </li>
           <li>
             <NavLink
