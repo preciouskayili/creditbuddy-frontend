@@ -6,11 +6,9 @@ import {
 } from "@iconscout/react-unicons";
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
 import logo from "../../assets/icons/logo.svg";
 
 const Sidebar = ({ children, pageTitle }) => {
-  const { loginWithRedirect, logout, user, isLoading } = useAuth0();
   return (
     <div className="drawer drawer-mobile">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />

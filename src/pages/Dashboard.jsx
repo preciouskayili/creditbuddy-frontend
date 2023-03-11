@@ -12,7 +12,7 @@ const Dashboard = () => {
 
         <div className="grid grid-cols-12 mt-12 gap-8 items-start container">
           <div className="col-span-12 xl:col-span-5 bg-white/5 rounded-lg p-5">
-            <h4 className="mr-auto text-white font-bold text-md mb-5">
+            <h4 className="mr-auto text-white font-bold text-xl mb-5">
               Quick actions
             </h4>
             <QuickActions />
@@ -20,11 +20,14 @@ const Dashboard = () => {
 
           <div className="col-span-12 xl:col-span-7 bg-white/5 rounded-lg p-5">
             <div className="flex">
-              <h4 className="mr-auto text-white font-bold text-md mb-5">
+              <h4 className="mr-auto text-white font-bold text-xl mb-5">
                 Transactions
               </h4>
 
-              <Link className="text-blue-500 text-xs font-semibold" to="/transactions">
+              <Link
+                className="text-blue-500 text-xs font-semibold"
+                to="/transactions"
+              >
                 View all
               </Link>
             </div>

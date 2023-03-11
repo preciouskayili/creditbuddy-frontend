@@ -10,31 +10,25 @@ import {
 const WalletDetails = () => {
   const [showBalance, setShowBalance] = useState(false);
   return (
-    <div className="mt-5 rounded-md bg-[#0A82FC] py-3">
-      <div className="px-5">
-        <div className="flex">
-          <span className="text-white/75 font-semibold text-sm mr-auto">
-            Total Balance
-          </span>
-
-          <button
-            className="text-white/75 font-semibold text-sm ml-auto"
-            onClick={() => setShowBalance(!showBalance)}
-          >
-            {showBalance ? <UilEyeSlash /> : <UilEye />}
-          </button>
-        </div>
-
-        <h3 className="mt-2 flex items-center overflow-x-auto overflow-y-hidden">
-          <span className="font-bold text-white text-3xl">
+    <div className="mt-5 rounded-lg bg-[#275BE1] min-h-[35vh] flex flex-col p-5">
+      <div className="flex"></div>
+      <div className="my-auto text-center">
+        <button
+          className="text-white/75 font-semibold text-sm ml-auto mb-1 btn btn-ghost btn-circle"
+          onClick={() => setShowBalance(!showBalance)}
+        >
+          {showBalance ? <UilEyeSlash /> : <UilEye />}
+        </button>
+        <p className="text-white/75 font-semibold text-sm items-center justify-center mt-2">
+          Total Balance
+        </p>
+        <h3 className="flex items-center overflow-x-auto overflow-y-hidden justify-center my-auto mb-6">
+          <span className="font-extrabold text-white text-4xl">
             ${showBalance ? "86,688.00" : "*** **"}
           </span>
           <span className="ml-3 font-light text-white/70 text-xl">USD</span>
         </h3>
-        <p className="mt-3 text-white/80 text-sm">Precious Kayili</p>
       </div>
-
-      <div className="border-t-[2px] border-white/30 my-5 flex" />
 
       <div className="flex justify-around">
         <button className="text-xs text-white/80 text-center flex flex-col items-center justify-center">

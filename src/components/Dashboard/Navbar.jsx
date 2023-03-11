@@ -1,12 +1,18 @@
 import { UilBars, UilAngleDown } from "@iconscout/react-unicons";
-import avatar from "../../assets/avatars/gMyfIhZY_400x400.jpg";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 const Navbar = ({ pageTitle }) => {
+  const { user } = useAuth0();
+  console.log("====================================");
+  console.log(user);
+  console.log("====================================");
   return (
     <nav className="w-full bg-[#111315] flex justify-between items-center p-4">
       {/* Navbar items */}
       <ul className="text-white flex list-none flex-row items-center mr-auto">
-        <li className="font-bold text-xl hidden lg:inline-flex">{pageTitle}</li>
+        <li className="font-bold text-3xl hidden lg:inline-flex">
+          {pageTitle}
+        </li>
         <label htmlFor="my-drawer-2" className="drawer-button lg:hidden">
           <UilBars />
         </label>
@@ -20,7 +26,7 @@ const Navbar = ({ pageTitle }) => {
               className="flex p-2 btn-ghost rounded-full cursor-pointer"
             >
               <img
-                src={avatar}
+                src={user.picture}
                 className="rounded-full w-[60px] h-[60px] object-cover"
                 alt="Profile"
               />

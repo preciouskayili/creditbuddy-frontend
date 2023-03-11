@@ -2,22 +2,15 @@ import React from "react";
 import { Auth0Provider } from "@auth0/auth0-react";
 const Auth0ProviderWithHistory = ({ children }) => {
   const domain = "dev-ltinb5sfiurrzj0j.us.auth0.com";
-  const clientId = "pcNn9nSBiFuyrcM8pIeNSyfrAp8ZXWvtU";
-
-  const onRedirectCallback = (appState) => {
-    window.history.replaceState(
-      {},
-      document.title,
-      appState?.returnTo || window.location.pathname
-    );
-  };
+  const clientId = "cNn9nSBiFuyrcM8pIeNSyfrAp8ZXWvtU";
 
   return (
     <Auth0Provider
       domain={domain}
       clientId={clientId}
-      redirectUrl={window.location.origin}
-      onRedirectCallback={onRedirectCallback}
+      authorizationParams={{
+        redirect_uri: "http://localhost:5173/dashboard",
+      }}
     >
       {children}
     </Auth0Provider>

@@ -9,8 +9,13 @@ import Settings from "./pages/Settings";
 import Login from "./components/Auth/Login";
 import Register from "./components/Auth/Register";
 import Auth0ProviderWithHistory from "./components/Auth/Auth0Provider";
+import Home from "./pages/Home";
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
   {
     path: "/dashboard",
     element: <Dashboard />,
@@ -36,10 +41,11 @@ const router = createBrowserRouter([
     element: <Register />,
   },
 ]);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Auth0ProviderWithHistory>
+  <Auth0ProviderWithHistory>
+    <React.StrictMode>
       <RouterProvider router={router}></RouterProvider>
-    </Auth0ProviderWithHistory>
-  </React.StrictMode>
+    </React.StrictMode>
+  </Auth0ProviderWithHistory>
 );

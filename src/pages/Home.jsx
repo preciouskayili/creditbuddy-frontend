@@ -1,7 +1,15 @@
-import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Home = () => {
-  return <div>Home</div>;
+  const { loginWithRedirect } = useAuth0();
+  return (
+    <button
+      className="btn btn-primary btn-lg rounded-none btn-square"
+      onClick={() => loginWithRedirect()}
+    >
+      Login
+    </button>
+  );
 };
 
 export default Home;
