@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ["Satoshi", "sans-serif"],
+      sans: ['"Cabinet Grotesk"', "sans-serif"],
     },
   },
   daisyui: {

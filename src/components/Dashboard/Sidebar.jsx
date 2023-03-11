@@ -20,7 +20,7 @@ const Sidebar = ({ children, pageTitle }) => {
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-80 bg-[#1A1C1E] text-neutral-content space-y-3">
+        <ul className="menu p-4 w-80 bg-[#1A1C1E] text-neutral-content font-medium space-y-3">
           <li className="mr-auto mt-4 mb-5">
             <img className="h-20" src={logo} alt="Creditbuddy" />
           </li>
