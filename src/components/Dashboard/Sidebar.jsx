@@ -7,8 +7,15 @@ import {
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/icons/logo.svg";
+import { useAuth0 } from "@auth0/auth0-react";
+import { useEffect } from "react";
 
 const Sidebar = ({ children, pageTitle }) => {
+  const { isAuthenticated, loginWithRedirect } = useAuth0();
+  useEffect(() => {
+    if (!isAuthenticated && !isLoading) loginWithRedirect();
+  });
+
   return (
     <div className="drawer drawer-mobile">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
