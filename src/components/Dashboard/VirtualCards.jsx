@@ -1,28 +1,27 @@
 import CardChip from "../../assets/icons/CardChip";
+import cardMesh from "../../assets/card-mesh.png";
+import mc from "../../assets/mastercard.png";
+import vc from "../../assets/visa.png";
 const VirtualCards = () => {
   return (
     <>
-      <div className="card w-auto sm:w-96 sm:h-56 mx-auto cursor-pointer bg-gradient-to-bl from-[#0A82FC] to-[#2d55dc] rounded-xl text-white shadow-2xl">
-        <div className="w-full px-8 flex flex-col justify-center">
-          <div className="flex justify-between pt-7">
+      <div className="card w-auto sm:w-96 mx-auto cursor-pointer bg-card bg-cover bg-center bg-no-repeat rounded-xl text-white shadow-2xl">
+        <div className="w-full flex flex-col justify-center">
+          <div className="flex justify-between pt-5 px-8">
             <div>
-            <img
-              src="https://uploads-ssl.webflow.com/6194b7fcf08b5fb4a89cf648/6194b7fcf08b5f1ea19cf671_Logo.svg"
-              alt="Creditbuddy"
-            />
+              <h3 className="font-black text-xl text-black">Creditpadi</h3>
             </div>
           </div>
-          <div className="pt-10">
+          <div className="pt-10 px-8 ">
             <CardChip />
           </div>
-          <div className="flex justify-between pt-10 pb-5">
+          <div className="flex justify-between p-5 rounded-b-xl mt-10 bg-black/70 px-8">
             <div>
-              <p className="font-medium uppercase text-sm">Precious Kayili</p>
+              <p className="font-extrabold uppercase text-sm">
+                Precious Kayili
+              </p>
             </div>
-            <img
-              className="h-4"
-              src="https://www.seekpng.com/png/full/212-2128294_visa-png.png"
-            />
+            <img className="h-5" src={vc} />
           </div>
         </div>
       </div>

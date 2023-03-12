@@ -6,6 +6,9 @@ module.exports = {
     fontFamily: {
       sans: ['"Cabinet Grotesk"', "sans-serif"],
     },
+    backgroundImage: {
+      card: "url(./src/assets/card-mesh.png)",
+    },
   },
   daisyui: {
     themes: [
