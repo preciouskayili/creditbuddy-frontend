@@ -2,7 +2,7 @@ import { UilBars, UilAngleDown } from "@iconscout/react-unicons";
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 const Navbar = ({ pageTitle }) => {
-  const { user, isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
+  const { user, isAuthenticated, isLoading, logout } = useAuth0();
 
   return (
     <nav className="w-full bg-[#111315] flex justify-between items-center p-4">
@@ -45,7 +45,14 @@ const Navbar = ({ pageTitle }) => {
                   <a className="font-bold mb-2">Profile</a>
                 </li>
                 <li>
-                  <Link to="/auth/login" className="btn btn-error">
+                  <Link
+                    onClick={() =>
+                      logout({
+                        logoutParams: { returnTo: window.location.origin },
+                      })
+                    }
+                    className="btn btn-error"
+                  >
                     Logout
                   </Link>
                 </li>

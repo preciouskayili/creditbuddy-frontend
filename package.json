@@ -13,6 +13,7 @@
     "@iconscout/react-unicons": "^1.1.6",
     "daisyui": "^2.50.1",
     "dotenv": "^16.0.3",
+    "joi-objectid": "^4.0.2",
     "keen-slider": "^6.8.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

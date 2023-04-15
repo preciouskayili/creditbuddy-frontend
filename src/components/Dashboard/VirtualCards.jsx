@@ -2,6 +2,7 @@ import CardChip from "../../assets/icons/CardChip";
 import cardMesh from "../../assets/card-mesh.png";
 import mc from "../../assets/mastercard.png";
 import vc from "../../assets/visa.png";
+import logo from "../../assets/og-logo.png";
 const VirtualCards = () => {
   return (
     <>
@@ -9,7 +10,7 @@ const VirtualCards = () => {
         <div className="w-full flex flex-col justify-center">
           <div className="flex justify-between pt-5 px-8">
             <div>
-              <h3 className="font-black text-xl text-black">Creditpadi</h3>
+              <img src={logo} className="w-32" alt="Creditbuddy" />
             </div>
           </div>
           <div className="pt-10 px-8 ">
