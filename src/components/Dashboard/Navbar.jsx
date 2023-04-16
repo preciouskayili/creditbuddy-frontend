@@ -31,7 +31,7 @@ const Navbar = ({ pageTitle }) => {
                 />
                 <div className="px-3 my-auto">
                   <small className="text-xs text-white/70">Hello,</small>
-                  <h5 className="text-sm font-bold">{user.name}</h5>
+                  <h5 className="text-sm font-bold">{user.nickname}</h5>
                 </div>
                 <span className="my-auto">
                   <UilAngleDown />

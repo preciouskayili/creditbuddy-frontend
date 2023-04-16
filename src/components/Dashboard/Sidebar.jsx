@@ -42,7 +42,9 @@ const Sidebar = ({ children, pageTitle }) => {
                 />
                 <div className="px-3 my-auto">
                   <h5 className="text-sm font-bold">{user.name}</h5>
-                  <small className="text-xs text-white/70">{user.email}</small>
+                  <small className="text-sm text-white/70">
+                    @{user.nickname}
+                  </small>
                 </div>
               </NavLink>
             </li>
